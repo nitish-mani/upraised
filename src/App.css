@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(218, 225, 231);
+}
+.home {
+  width: 250px;
+  height: 450px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid rgb(218, 225, 231);
+  background: linear-gradient(white, rgb(152, 152, 238));
+}
+.upraised {
+  margin-top: 15px;
+  /* border: 2px solid black; */
+}
+.quiz {
+  width: 50%;
+  /* padding: 20px 20px; */
+  height: 100px;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-align: center; */
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  color: red;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.start {
+  margin-top: 45%;
+  width: 80%;
+  padding: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  /* border: 2px solid black; */
+  cursor: pointer;
+}
+.questionCard {
+  position: relative;
+  width: 250px;
+  height: 450px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(152, 152, 238);
+
+  border: 2px solid rgb(218, 225, 231);
+}
+.circle {
+  position: absolute;
+  width: 100px;
+  border-radius: 100%;
+  height: 100px;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%);
+
+  /* margin-top: 50px; */
+  background-color: whitesmoke;
+  /* z-index: 1; */
+}
+.circle > .progressBar {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  background-color: rgba(94, 201, 94, 0.292);
+}
+
+.circle > .progressBar > .progressBar-child {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  /* margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px; */
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.show-question {
+  height: 380px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 70px;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+
+  /* font-weight: 900; */
+}
+.show-question > h3 {
+  width: 100%;
+  margin-top: 45px;
+  font-weight: 300;
+}
+.show-option {
+  width: 95%;
+  /* height: 20px; */
+  background-color: lightskyblue;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  cursor: pointer;
+}
+.next-question {
+  width: 90%;
+  padding: 5px;
+  position: absolute;
+  top: 92%;
+  left: 5%;
+  /* transform: translate(-10%); */
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.result {
+  width: 250px;
+  height: 450px;
+  margin-top: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  background-color: rgb(152, 152, 238);
+  border: 2px solid rgb(218, 225, 231);
+}
+.result-child {
+  height: 380px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 70px;
+
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.div1 {
+  width: 110px;
+  height: 110px;
+  /* padding: 10px; */
+  border-radius: 50%;
+  border: 1px solid whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(234, 140, 140);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div1-div {
+  width: 80px;
+  height: 80px;
+  /* margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px; */
+  border-radius: 50%;
+
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.correct {
+  width: 90%;
+  height: 30px;
+  background-color: rgb(81, 168, 81);
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+.incorrect {
+  width: 90%;
+  height: 30px;
+  background-color: rgb(211, 91, 91);
+
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+.start-again {
+  width: 90%;
+  height: 30px;
+  background-color: red;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  color: whitesmoke;
+  cursor: pointer;
+}
