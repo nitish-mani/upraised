@@ -6,7 +6,7 @@ export default function Result({ result }) {
   const navigate = useNavigate();
   let currect = 0;
   for (let i = 0; i < result.length; i++) {
-    if (result[i].i) currect++;
+    if (result[i] && result[i].i) currect++;
   }
   function handleStartAgain() {
     navigate("/");
